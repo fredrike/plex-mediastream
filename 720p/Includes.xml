@@ -935,10 +935,10 @@
 			<visible>!Window.IsVisible(2003) + !Skin.HasSetting(Clock)</visible>
 			<control type="group" id="1">
 				<!--<visible>!Skin.HasSetting(LargeClock)</visible>-->
-				<control type="grouplist">
+				<control type="grouplist" id="1">
 					<orientation>horizontal</orientation>
 					<itemgap>7</itemgap>
-					<control type="label">
+					<control type="label" id="1">
 						<height>32</height>
 						<font>LargeTitleFont</font>
 						<align>right</align>
@@ -946,7 +946,7 @@
 						<label>[COLOR=orange][B]&#xB7;[/B][/COLOR]</label>
 						<width>10</width>
 					</control>
-					<control type="label">
+					<control type="label" id="1">
 						<height>35</height>
 						<font>MediumDefaultCapsFont</font>
 						<align>left</align>
@@ -956,7 +956,7 @@
 						<textcolor>FF999999</textcolor>
 					</control>
 					<!--<control type="image">
-						<texture>ClockBackground2.png</texture>						
+						<texture>ClockBackground2.png</texture>
 						<align>right</align>
 					</control>-->
 				</control>
@@ -1522,7 +1522,7 @@
 				<textcolor>orange</textcolor>
 				<wrapmultiline>false</wrapmultiline>
 			</control>
-		</focusedlayout>		
+		</focusedlayout>
 		<!-- Plugins -->
 		<itemlayout condition="Container.content(plugincontent)" width="154" height="160">
 			<control type="image">
